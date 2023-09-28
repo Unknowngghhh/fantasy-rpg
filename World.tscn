@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddnu47a2fjb4y"]
+
+[ext_resource type="PackedScene" uid="uid://do7htx4sqmcnh" path="res://Music.tscn" id="1_4mtc3"]
+[ext_resource type="PackedScene" uid="uid://dot8mhuo6a48u" path="res://TouchController.tscn" id="1_abje0"]
+[ext_resource type="PackedScene" uid="uid://cywj2t4dmqdr5" path="res://Player/Player.tscn" id="2_3msul"]
+
+[node name="World" type="Node2D"]
+
+[node name="Music" parent="." instance=ExtResource("1_4mtc3")]
+
+[node name="TouchController" parent="." instance=ExtResource("1_abje0")]
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("2_3msul")]
+position = Vector2(578, 172)
